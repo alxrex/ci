@@ -14,6 +14,13 @@ class Usuario_model extends CI_Model {
                 return $query;
         }
 
+        public function get_by_id($id)
+        {
+                $query = $this->db->query("SELECT * FROM usuario WHERE id = ".$id);
+                return $query;
+        }
+
+
         public function insert($data)
         {
                 $this->db->insert('usuario', $data);

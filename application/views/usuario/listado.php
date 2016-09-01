@@ -37,7 +37,7 @@ if($sql_usuarios->num_rows()>0)
 			'<td>'.$row->fecha_nacimiento.'</td>'.
 			//Acciones
 			'<td>
-			<a href="'.site_url('usuario/ver').'" />Ver</a>
+			<a href="'.site_url('usuario/ver/'.$row->id).'" />Ver</a>
 			<a href="'.site_url('usuario/editar').'" />Editar</a>
 			<a href="'.site_url('usuario/eliminar').'" />Eliminar</a>
 			</td>'.

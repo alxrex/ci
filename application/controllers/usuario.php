@@ -40,7 +40,12 @@ class Usuario extends CI_Controller {
 		echo 'Implementar Insert, Validando utilizando <b>Form Validation</b>';
 	}
 
-	public function ver($id){}
+	public function ver($id)
+	{
+		//echo 'ID '.$id;
+		$data['row_sql'] = $this->usuario_model->get_by_id($id);
+		$this->load->view('usuario/ver',$data);
+	}
 
 	public function editar($id){}
 
