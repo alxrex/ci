@@ -29,5 +29,10 @@ y en application/config/database.php  Especificar los datos para la conexion de 
 	'database' => 'agenda',
 ```
 
+//Importante revisar el CHARSET,(Debera ser igual al de tu configuracion en la Base de Datos) recomiendo estos:
+```
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+```
 
 ## Completa el CRUD
